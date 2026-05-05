@@ -1,0 +1,15 @@
+/*body{
+    color: blue
+}*/
+body{
+    font-family: Arial;
+    color: brown;
+    font-size: 10px;
+}
+h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+p{
+    color: red;
+}
