@@ -2,89 +2,99 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Encuesta Laboral</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla</title>
 </head>
 <body>
+    <h1 style="color: blue;"><i>Factura la casita Feliz</i></h1>
+    <table border="1">
+        <caption>Comprobante</caption>
+        <thead>
+            <tr>
+                <th colspan="5">Factura de compras</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <td colspan="5" style="font-size: 13px; text-align: right;"><em>Impresion para el cliente</em></td>
+            </tr>
+        </tfoot>
+        <tbody>
+            <tr>
+                <th>Código del vendedor</th>
+                <td colspan="2" style="text-align: center;">001</td>
+                <th style="text-align: center;">Fecha</th>
+                <td colspan="2" style="text-align: right;">12/07/2020</td>
+            </tr>
 
-    <h2 style="color: #2e75b6;">Encuesta laboral</h2>
+            <tr>
+                <th rowspan="4" style="text-align: center;">Datos del cliente</th>
+                <th colspan="2">Nombre</th>
+                <td colspan="3" style="text-align: right;">Juan Diaz Prado</td>
+            </tr>
+            <tr>
+                <th colspan="2">Dirección</th>
+                <td colspan="3" style="text-align: right;">Balta # 140</td>
+            </tr>
+            <tr>
+                <th colspan="2">RUC</th>
+                <td colspan="3" style="text-align: right;">568734674578</td>
+            </tr>
+            <tr>
+                <th colspan="2">Teléfono</th>
+                <td colspan="3" style="text-align: right;">074-675443</td>
+            </tr>
 
-    <form id="encuesta" name="encuesta" method="post" action="data.php">
-        <div>
-        <fieldset id="datos_laborales">
-            <legend>Datos Laborales</legend>
-            <label for="nombres">Nombre y Apellidos</label>
-            <input type="text" name="nombres" id="nombres" size="40"><br><br>
+            <tr><td colspan="5">.</td></tr>
+            <tr>
+                <th>CÓDIGO</th>
+                <th>PRODUCTO</th>
+                <th>CANTIDAD</th>
+                <th>PRECIO UNITARIO</th>
+                <th>TOTAL PARCIAL</th>
+            </tr>
 
-            <label for="direccion">Dirección</label>
-            <input type="text" name="direccion" id="direccion" size="35"><br><br>
+            <tr>
+                <td>p001</td>
+                <td>Cemento rojo</td>
+                <td style="text-align: right;">2</td>
+                <td style="text-align: right;">S/. 55.00</td>
+                <td style="text-align: right;">S/. 110.00</td>
+            </tr>
+            <tr>
+                <td>p002</td>
+                <td>Calaminas</td>
+                <td style="text-align: right;">5</td>
+                <td style="text-align: right;">S/. 65.00</td>
+                <td style="text-align: right;">S/. 325.00</td>
+            </tr>
+            <tr>
+                <td>p003</td>
+                <td>Pernos</td>
+                <td style="text-align: right    ;">20</td>
+                <td style="text-align: right;">S/. 1.50</td>
+                <td style="text-align: right;">S/. 30.00</td>
+            </tr>
 
-            <label for="telefono">Telef | Cel.</label>
-            <input type="tel" name="telefono" id="telefono"><br><br>
+            <tr><td>&nbsp;</td><td></td><td></td><td></td><td></td></tr>
+            <tr><td>&nbsp;</td><td></td><td></td><td></td><td></td></tr>
 
-            <label for="fecha">Fecha Ingreso</label>
-            <input  name="fecha" id="fecha"><br><br>
-
-            <label for="puesto">Puesto de trabajo</label>
-            <select name="puesto" id="puesto">
-                <option value="X" selected="selected">...</option>
-                <option value="A">Administrativo</option>
-                <option value="B">Operativo</option>
-                <option value="C">Gerencial</option>
-            </select><br><br>
-
-            <label for="dni">DNI</label>
-            <input type="text" name="dni" id="dni" maxlength="8"><br><br>
-
-            <label for="email">Email</label>
-            <input type="email" name="email" id="email" size="35">
-        </fieldset>
-
-        <br>
-
-        <fieldset id="estado_civil">
-            <legend>Estado civil</legend>
-            <input type="radio" name="estado" id="soltero" value="S">
-            <label for="soltero">Soltero</label><br>
-
-            <input type="radio" name="estado" id="casado" value="C">
-            <label for="casado">Casado</label><br>
-
-            <input type="radio" name="estado" id="divorciado" value="D">
-            <label for="divorciado">Divorciado</label>
-        </fieldset>
-
-        <br>
-
-        <fieldset id="satisfaccion">
-            <legend>Nivel de satisfacción</legend>
-            <input type="radio" name="satisf_1" id="satisf_1">
-            <label for="satisf_1">Se siente satisfecho con el trabajo que realiza</label><br>
-
-            <input type="radio" name="satisf_2" id="satisf_2">
-            <label for="satisf_2">Los canales de comunicación son adecuados</label><br>
-
-            <input type="radio" name="satisf_3" id="satisf_3">
-            <label for="satisf_3">El trato de los directivos es cordial y efectivo</label><br>
-
-            <input type="radio" name="satisf_4" id="satisf_4">
-            <label for="satisf_4">El ambiente laboral es el adecuado para mi trabajo</label>
-        </fieldset>
-
-        <br>
-
-        <fieldset id="grupo_observaciones">
-            <legend>Observaciones</legend>
-            <textarea name="observ" id="observ" rows="4" cols="50"></textarea>
-        </fieldset>
-
-        <br>
-
-        <div>
-            <input type="reset" value="Nuevo">
-            <input type="submit" value="Enviar">
-        </div>
-
-    </form>
-
+            
+            <tr>
+                <th rowspan="3" style="text-align: center;">Vendedor</th>
+                <td rowspan="3" colspan="2" style="text-align: center;">David Carranza</td>
+                <th>Subtotal</th>
+                <td colspan="2" style="text-align: right;">S/. 465.00</td>
+            </tr>
+            <tr>
+                <th>IGV</th>
+                <td colspan="2" style="text-align: right;">S/. 83.70</td>
+            </tr>
+            <tr>
+                <th>Total Final</th>
+                <td colspan="2" style="text-align: right;">S/. 548.70</td>
+            </tr>
+        </tbody>
+    </table>
 </body>
 </html>
