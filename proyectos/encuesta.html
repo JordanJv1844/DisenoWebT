@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Encuesta Laboral</title>
+</head>
+<body>
+
+    <h2 style="color: #2e75b6;">Encuesta laboral</h2>
+
+    <form id="encuesta" name="encuesta" method="post" action="data.php">
+        <div>
+        <fieldset id="datos_laborales">
+            <legend>Datos Laborales</legend>
+            <label for="nombres">Nombre y Apellidos</label>
+            <input type="text" name="nombres" id="nombres" size="40"><br><br>
+
+            <label for="direccion">Dirección</label>
+            <input type="text" name="direccion" id="direccion" size="35"><br><br>
+
+            <label for="telefono">Telef | Cel.</label>
+            <input type="tel" name="telefono" id="telefono"><br><br>
+
+            <label for="fecha">Fecha Ingreso</label>
+            <input  name="fecha" id="fecha"><br><br>
+
+            <label for="puesto">Puesto de trabajo</label>
+            <select name="puesto" id="puesto">
+                <option value="X" selected="selected">...</option>
+                <option value="A">Administrativo</option>
+                <option value="B">Operativo</option>
+                <option value="C">Gerencial</option>
+            </select><br><br>
+
+            <label for="dni">DNI</label>
+            <input type="text" name="dni" id="dni" maxlength="8"><br><br>
+
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" size="35">
+        </fieldset>
+
+        <br>
+
+        <fieldset id="estado_civil">
+            <legend>Estado civil</legend>
+            <input type="radio" name="estado" id="soltero" value="S">
+            <label for="soltero">Soltero</label><br>
+
+            <input type="radio" name="estado" id="casado" value="C">
+            <label for="casado">Casado</label><br>
+
+            <input type="radio" name="estado" id="divorciado" value="D">
+            <label for="divorciado">Divorciado</label>
+        </fieldset>
+
+        <br>
+
+        <fieldset id="satisfaccion">
+            <legend>Nivel de satisfacción</legend>
+            <input type="radio" name="satisf_1" id="satisf_1">
+            <label for="satisf_1">Se siente satisfecho con el trabajo que realiza</label><br>
+
+            <input type="radio" name="satisf_2" id="satisf_2">
+            <label for="satisf_2">Los canales de comunicación son adecuados</label><br>
+
+            <input type="radio" name="satisf_3" id="satisf_3">
+            <label for="satisf_3">El trato de los directivos es cordial y efectivo</label><br>
+
+            <input type="radio" name="satisf_4" id="satisf_4">
+            <label for="satisf_4">El ambiente laboral es el adecuado para mi trabajo</label>
+        </fieldset>
+
+        <br>
+
+        <fieldset id="grupo_observaciones">
+            <legend>Observaciones</legend>
+            <textarea name="observ" id="observ" rows="4" cols="50"></textarea>
+        </fieldset>
+
+        <br>
+
+        <div>
+            <input type="reset" value="Nuevo">
+            <input type="submit" value="Enviar">
+        </div>
+
+    </form>
+
+</body>
+</html>

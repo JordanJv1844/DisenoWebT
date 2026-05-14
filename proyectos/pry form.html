@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Proyecto 5 - Registro de Usuario</title>
+</head>
+<body>
+
+    <table border="1" width="900" align="center" cellspacing="0" cellpadding="40">
+        <tr>
+            <td bgcolor="#D3D3D3" align="center" width="40%">
+                <h1><strong>Bienvenido</strong></h1>
+                <p>Para unirte a nuestra comunidad por favor inicia sesión con tus datos</p>
+                <br>
+                <button type="button" style="padding: 10px 30px;">Iniciar sesión</button>
+            </td>
+
+            <td bgcolor="#FFFFFF"  align="center" width="60%">
+                <h2 align="center">Nuevo Usuario</h2>
+                
+                <button type="button">Registro con Facebook</button>
+                <button type="button">Registro con Google</button>
+                
+                <p>O registrarse con</p>
+
+                <form action="data.php" method="post">
+                    <table border="0" width="89%" > 
+                        <tr align="center">
+                            <td><input type="text" name="nombres" placeholder="Nombres"></td>
+                            <td><input type="text" name="apellidos" placeholder="Apellidos"></td>
+                        </tr>
+                    </table>
+                    
+                    <br>
+                    <input type="email" name="correo" placeholder="miorreo@dominio" size="50">
+                    <br><br>
+                    
+                    <input type="password" name="pass" placeholder="Contraseña" size="50">
+                    <br><br>
+                    
+                    <input type="checkbox" id="acepto" name="acepto">
+                    <label for="acepto">
+                        Al crear esta cuenta, aceptas nuestros <strong>terminos & condiciones</strong>
+                    </label>
+                    
+                    <br><br>
+                    <input type="submit"   value="Enviar" >
+                </form>
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>
