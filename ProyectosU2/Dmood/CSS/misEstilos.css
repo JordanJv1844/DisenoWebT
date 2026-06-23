@@ -1,0 +1,212 @@
+body{
+    background-color:#f4f6f8;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.logo-tienda,
+.marca-principal{
+    height:75px;
+    width:auto;
+}
+.bg-info{
+    background-color:#c21872 !important;
+}
+.bg-primary{
+    background-color:#c21872 !important;
+}
+
+.text-primary{
+    color:#c21872 !important;
+}
+
+.buscador-principal .form-control{
+    border-radius:20px 0 0 20px;
+}
+
+.buscador-principal .btn{
+    border-radius:0 20px 20px 0;
+}
+
+.btn-outline-info{
+    color:#c21872 !important;
+    border-color:#c21872 !important;
+}
+
+.btn-outline-info:hover{
+    background-color:#c21872 !important;
+    color:white !important;
+}
+
+
+.iconos-sociales .btn{
+    border-radius:50%;
+    width:40px;
+    height:40px;
+    padding:0;
+    margin-left:4px;
+}
+
+.btn-info{
+    background-color:#c21872 !important;
+    border-color:#c21872 !important;
+}
+
+
+.menu-navegacion{
+    border-bottom:4px solid #c21872;
+}
+
+.menu-navegacion .nav-link{
+    transition:.3s;
+}
+
+.menu-navegacion .nav-link:hover{
+    color:white !important;
+}
+
+.nav-link.text-info{
+    color:#f8b4d9 !important;
+}
+
+.nav-link.text-info:hover{
+    color:white !important;
+}
+
+
+.panel-marcas{
+    border-radius:15px;
+    overflow:hidden;
+}
+
+.panel-marcas .card-header{
+    background-color:#c21872 !important;
+}
+
+.panel-marcas .list-group-item:hover{
+    background-color:#f8d7e8;
+    cursor:pointer;
+}
+
+
+.banner-promocional img{
+    border-radius:15px !important;
+}
+
+.seccion-beneficios .card{
+    border-radius:15px;
+}
+
+.seccion-beneficios i{
+    color:#c21872 !important;
+}
+
+.area-productos .card{
+    border-radius:15px;
+    overflow:hidden;
+}
+
+.area-productos .card img{
+    padding:10px;
+}
+
+.area-productos .card-title{
+    font-weight:600;
+}
+
+.area-productos .text-warning{
+    color:#f4a261 !important;
+}
+
+
+.btn-primary{
+    background-color:#c21872 !important;
+    border-color:#c21872 !important;
+}
+
+.btn-primary:hover{
+    background-color:#9e135d !important;
+    border-color:#9e135d !important;
+}
+
+.btn-primary:focus{
+    background-color:#9e135d !important;
+    border-color:#9e135d !important;
+    box-shadow:0 0 0 .2rem rgba(194,24,114,.25) !important;
+}
+
+
+.footer{
+    background-color:#293241 !important;
+    color:white !important;
+}
+
+.footer h5,
+.footer h6{
+    color:#f8b4d9;
+    font-weight:bold;
+}
+
+.footer p,
+.footer small{
+    color:white;
+}
+
+.formulario-newsletter .form-control{
+    border-radius:20px;
+}
+
+.formulario-newsletter .btn-dark{
+    background-color:#c21872;
+    border:none;
+}
+
+.formulario-newsletter .btn-dark:hover{
+    background-color:#9e135d;
+}
+
+
+.copyright-footer{
+    background-color:#1d2530 !important;
+}
+
+
+.card{
+    height:100%;
+    transition:all .35s ease;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 15px 30px rgba(0,0,0,.25) !important;
+    transform:scale(1.08);
+}
+
+
+.card-img-top{
+    height:180px;
+    width:100%;
+    object-fit:contain;
+    padding:10px;
+    transition:.4s;
+    transform:scale(1.08);
+}
+
+.card-title{
+    min-height:50px;
+}
+
+@media(max-width:768px){
+
+    .marca-principal,
+    .logo-tienda{
+        height:60px;
+    }
+
+    .iconos-sociales{
+        margin-top:10px;
+    }
+
+    .iconos-sociales .btn{
+        margin-bottom:5px;
+    }
+
+}
