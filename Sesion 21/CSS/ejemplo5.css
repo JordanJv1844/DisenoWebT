@@ -1,0 +1,48 @@
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.arbol{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.arbol-sup{
+    width: 0;
+    height: 0;
+    border-top: 30px solid transparent;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-bottom: 50px solid #4CAF50;
+    z-index: 100;
+}
+.arbol-med{
+    width: 0;
+    height: 0;
+    border-top: 45px solid transparent;
+    border-left: 45px solid transparent;
+    border-right: 45px solid transparent;
+    border-bottom: 70px solid #2e7032;
+    margin-top: -70px;
+    z-index: 50;
+}
+.arbol-abajo{
+    width: 0;
+    height: 0;
+    border-top: 60px solid transparent;
+    border-left: 60px solid transparent;
+    border-right: 60px solid transparent;
+    border-bottom: 90px solid #185e20;
+    margin-top: -100px;
+    z-index: 0;
+}
+.tronco{
+    width: 24px;
+    height: 30px;
+    background-color: #5d4037;
+    margin-top: -2px;
+    border-radius: 0 0 2px 2px;
+}

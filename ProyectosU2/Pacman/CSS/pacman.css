@@ -1,0 +1,139 @@
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #0a0a0a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.laberinto{
+    position: relative;
+    width: 35rem;
+    height: 35rem;
+    background-color: black;
+    border: 2px solid #4f79a4;
+    overflow: hidden;
+}
+
+
+.bloque{
+    position: absolute;
+    background-color: #355c7d;
+    border: 2px solid #4f79a4;
+    border-radius: 8px;
+}
+
+.bloque1{
+    top: 8rem;
+    left: 8rem;
+    width: 6rem;
+    height: 2rem;
+}
+
+.bloque2{
+    top: 8rem;
+    left: 20rem;
+    width: 6rem;
+    height: 2rem;
+}
+
+.bloque3{
+    top: 16rem;
+    left: 12rem;
+    width: 10rem;
+    height: 2rem;
+}
+
+.bloque4{
+    top: 24rem;
+    left: 8rem;
+    width: 6rem;
+    height: 2rem;
+}
+
+.bloque5{
+    top: 24rem;
+    left: 20rem;
+    width: 6rem;
+    height: 2rem;
+}
+
+
+.pacman{
+    background-color: #f4c542;
+    color: black;
+    padding: .2rem .3rem 1rem .3rem;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    border-radius: 2rem 2rem .5rem .5rem;
+    text-align: center;
+    font-weight: bold;
+    z-index: 10;
+
+    animation:
+        recorrido 12s linear infinite,
+        parpadeo 2s infinite;
+}
+
+
+.fantasma{
+    background-color: crimson;
+    color: white;
+    padding: .2rem .3rem 1rem .3rem;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    border-radius: 2rem 2rem .5rem .5rem;
+    text-align: center;
+    font-weight: bold;
+
+    animation:
+        recorrido 12s linear infinite,
+        parpadeo 2s infinite;
+
+    animation-delay: -1.5s;
+}
+
+@keyframes parpadeo{
+
+    0%,46%,54%,100%{
+        color: white;
+    }
+
+    50%{
+        color: transparent;
+    }
+
+}
+
+@keyframes recorrido{
+
+    0%{
+        transform: translate(0,0);
+    }
+
+    25%{
+        transform: translate(30rem,0);
+    }
+
+    50%{
+        transform: translate(30rem,30rem);
+    }
+
+    75%{
+        transform: translate(0,30rem);
+    }
+
+    100%{
+        transform: translate(0,0);
+    }
+
+}

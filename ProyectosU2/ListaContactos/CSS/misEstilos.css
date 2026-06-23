@@ -1,0 +1,116 @@
+body{
+    font-family: Arial, sans-serif;
+    background-color: #eef3f8;
+    margin: 20px;
+}
+
+.contenedor-formulario,
+.contenedor-lista{
+    width: 500px;
+    margin: 0 auto 20px auto;
+    padding: 15px;
+    border-radius: 12px;
+}
+
+.contenedor-formulario{
+    background-color: #dfe9f3;
+}
+
+.contenedor-lista{
+    background-color: #f7f4ea;
+}
+
+h2{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#contadorContactos{
+    text-align: center;
+    font-weight: bold;
+    color: #444;
+    margin-bottom: 15px;
+}
+
+.grupo-campo{
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.grupo-campo label{
+    width: 100px;
+    font-weight: bold;
+}
+
+.grupo-campo input{
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #999;
+    border-radius: 8px;
+}
+
+.panel-acciones{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.panel-acciones input{
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+}
+
+#guardarBtn{
+    background-color: #28a745;
+}
+
+#buscarBtn{
+    background-color: #007bff;
+}
+
+#eliminarBtn{
+    background-color: #dc3545;
+}
+
+#elimTodoBtn{
+    background-color: #8b0000;
+}
+
+#ordenarBtn{
+    background-color: #6f42c1;
+    grid-column: span 2;
+}
+
+.panel-acciones input:hover{
+    opacity: 0.85;
+}
+
+.tabla-agenda{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tabla-agenda th{
+    background-color: #34495e;
+    color: white;
+    padding: 10px;
+    text-align: left;
+}
+
+.tabla-agenda td{
+    padding: 8px;
+    border: 1px solid #d0d0d0;
+}
+
+.tabla-agenda tbody tr:nth-child(even){
+    background-color: #f3f3f3;
+}
+
+.tabla-agenda tbody tr:hover{
+    background-color: #dceeff;
+}

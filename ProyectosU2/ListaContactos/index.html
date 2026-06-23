@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda Personal</title>
+    <link rel="stylesheet" href="CSS/misEstilos.css">
+</head>
+<body>
+
+    <div class="contenedor-formulario">
+        <h2>Agenda de Contactos</h2>
+
+        <p id="contadorContactos">Total de contactos: 0</p>
+
+        <form id="frmAgenda">
+
+            <div class="grupo-campo">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre">
+            </div>
+
+            <div class="grupo-campo">
+                <label for="telefono">Teléfono:</label>
+                <input type="text" id="telefono">
+            </div>
+
+            <div class="grupo-campo">
+                <label for="email">Email:</label>
+                <input type="text" id="email">
+            </div>
+
+            <div class="grupo-campo">
+                <label for="direccion">Dirección:</label>
+                <input type="text" id="direccion">
+            </div>
+
+            <div class="panel-acciones">
+                <input type="button" id="guardarBtn" value="💾 Guardar">
+                <input type="button" id="buscarBtn" value="🔍 Buscar">
+                <input type="button" id="eliminarBtn" value="Eliminar">
+                <input type="button" id="elimTodoBtn" value="❌ Eliminar todo">
+                <input type="button" id="ordenarBtn" value="Ordenar">
+            </div>
+
+        </form>
+    </div>
+
+    <div class="contenedor-lista">
+
+        <h2>Lista de Contactos</h2>
+
+        <table class="tabla-agenda">
+
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Celular</th>
+                    <th>Email</th>
+                    <th>Dirección</th>
+                </tr>
+            </thead>
+
+            <tbody id="listaContactos">
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+    <script src="JS/agenda.js"></script>
+
+</body>
+</html>
